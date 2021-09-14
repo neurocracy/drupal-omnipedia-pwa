@@ -1,0 +1,25 @@
+{
+  "name": "drupal/omnipedia_pwa",
+  "description": "Omnipedia - Progressive Web App",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Ambient.Impact",
+      "homepage": "https://ambientimpact.com/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "drupal/pwa": "^1.5"
+  },
+  "require-dev": {
+  },
+  "extra": {
+    "patches": {
+      "drupal/pwa": {
+        "Add theme manipulation support: https://www.drupal.org/project/pwa/issues/3168343 ": "https://git.drupalcode.org/project/pwa/-/merge_requests/11.patch"
+      }
+    }
+  }
+}
