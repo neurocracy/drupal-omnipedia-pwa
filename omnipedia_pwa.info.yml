@@ -2,7 +2,7 @@ name: Omnipedia - Progressive Web App
 type: module
 description: Provides PWA-related functionality for Omnipedia.
 package: Omnipedia
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9
 
 dependencies:
   - pwa:pwa
