@@ -11,7 +11,9 @@
     }
   ],
   "require": {
-    "drupal/pwa": "1.x-dev@dev"
+    "drupal/pwa": "1.x-dev@dev",
+    "symfony/dom-crawler": "^3.4",
+    "symfony/css-selector": "^3.4"
   },
   "require-dev": {
   }

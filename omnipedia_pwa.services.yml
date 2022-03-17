@@ -1,0 +1,7 @@
+services:
+
+  # Service worker content service.
+  omnipedia_pwa.content:
+    class: Drupal\omnipedia_pwa\Service\Content
+    arguments:
+      - '@entity_type.manager'

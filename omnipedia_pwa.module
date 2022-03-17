@@ -1,0 +1,29 @@
+<?php declare(strict_types=1);
+
+use Drupal\Core\Cache\CacheableMetadata;
+
+/**
+ * Implements \hook_pwa_cache_urls_alter().
+ */
+function omnipedia_pwa_pwa_cache_urls_alter(
+  array &$urls, CacheableMetadata &$cacheableMetadata
+): void {
+
+  \Drupal::service('omnipedia_pwa.content')->alterCacheUrls(
+    $urls, $cacheableMetadata
+  );
+
+}
+
+/**
+ * Implements \hook_pwa_exclude_urls_alter().
+ */
+function omnipedia_pwa_pwa_exclude_urls_alter(
+  array &$urls, CacheableMetadata &$cacheableMetadata
+): void {
+
+  \Drupal::service('omnipedia_pwa.content')->alterExcludeUrls(
+    $urls, $cacheableMetadata
+  );
+
+}

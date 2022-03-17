@@ -5,4 +5,5 @@ package: Omnipedia
 core_version_requirement: ^9
 
 dependencies:
+  - omnipedia_menu:omnipedia_menu
   - pwa:pwa
