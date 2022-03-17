@@ -5,3 +5,9 @@ services:
     class: Drupal\omnipedia_pwa\Service\Content
     arguments:
       - '@entity_type.manager'
+
+  # Service worker media service.
+  omnipedia_pwa.media:
+    class: Drupal\omnipedia_pwa\Service\Media
+    arguments:
+      - '@entity_type.manager'

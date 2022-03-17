@@ -13,6 +13,10 @@ function omnipedia_pwa_pwa_cache_urls_alter(
     $urls, $cacheableMetadata
   );
 
+  \Drupal::service('omnipedia_pwa.media')->alterCacheUrls(
+    $urls, $cacheableMetadata
+  );
+
 }
 
 /**
@@ -24,6 +28,19 @@ function omnipedia_pwa_pwa_exclude_urls_alter(
 
   \Drupal::service('omnipedia_pwa.content')->alterExcludeUrls(
     $urls, $cacheableMetadata
+  );
+
+}
+
+/**
+ * Implements \hook_pwa_cache_urls_assets_page_alter().
+ */
+function omnipedia_pwa_pwa_cache_urls_assets_page_alter(
+  array &$urls, string $pageUrl, \DOMXPath $xpath
+): void {
+
+  \Drupal::service('omnipedia_pwa.media')->alterPageAssetCacheUrls(
+    $urls, $pageUrl, $xpath
   );
 
 }
