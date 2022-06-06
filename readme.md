@@ -1,5 +1,8 @@
-This contains the source files for the "[Omnipedia](https://omnipedia.app/) -
-Progressive Web App" Drupal module.
+[Progressive Web App (PWA) module](https://www.drupal.org/project/pwa)
+integration for [Omnipedia](https://omnipedia.app/). Note that this built on
+[the work-in-progress PWA 2.x
+branch](https://www.drupal.org/project/pwa/issues/3165795) and will likely not
+work with the 8.x-1.x version.
 
 ⚠️⚠️⚠️ ***Here be potential spoilers. Proceed at your own risk.*** ⚠️⚠️⚠️
 
@@ -20,3 +23,5 @@ part of this codebase is useful or will inspire someone out there.
 * [Drupal 9](https://www.drupal.org/download) ([Drupal 8 is end-of-life](https://www.drupal.org/psa-2021-11-30))
 
 * [Composer](https://getcomposer.org/)
+
+* [PWA module 2.x branch](https://git.drupalcode.org/project/pwa/-/tree/2.x) installed
